@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.krishnchinya.personalhealthmonitoringsystem.activity.VitalSigns">
+
+        <LinearLayout
+            android:id="@+id/activity_Update_registration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="30px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:paddingTop="30px"
+            android:scrollbars="vertical">
+
+            <ImageView
+                android:id="@+id/UpdateimageView"
+                android:layout_width="wrap_content"
+                android:layout_height="71dp"
+                android:src="@drawable/logo" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_spBloodType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/blood_types"
+                    android:prompt="@string/blood_prompt" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <EditText
+                    android:id="@+id/etGlucoseLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="Blood Glucose Level"
+                    android:inputType="textPersonName|text|number" />
+
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="mg/dl." />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="315dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/Cholestrol_level" />
+
+                <ImageView
+                    android:id="@+id/question1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/spinner2"
+                    android:onClick="imageClick1"
+                    android:src="@drawable/question" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="315dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/pressure_level" />
+
+                <ImageView
+                    android:id="@+id/question2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/spinner3"
+                    android:src="@drawable/question"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+
+                >
+
+                <EditText
+                    android:id="@+id/etBodyTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="Body Temprature"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <EditText
+                    android:id="@+id/etHemoLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="Hemoglobin Level"
+                    android:inputType="textPersonName|text|number" />
+
+
+                <TextView
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="gm/dl." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <EditText
+                    android:id="@+id/etHeartRate"
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Heart Rate"
+                    android:inputType="textPersonName|text|number" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Beats Per Minute" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <EditText
+                    android:id="@+id/etHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Height / inches"
+                    android:inputType="textPersonName|text|number"
+                    android:layout_weight="0.5"
+                    />
+
+
+                <EditText
+                    android:id="@+id/etWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Weight / pounds"
+                    android:inputType="textPersonName|text|number"
+                    android:layout_weight="0.5"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnHeartRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Measure Heart Rate " />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Save " />
+        </LinearLayout>
+
+    </ScrollView>
+
+

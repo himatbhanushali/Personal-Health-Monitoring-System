@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.krishnchinya.personalhealthmonitoringsystem.activity.DietSearch"
+    android:background="#FFFAFAFA">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foodname"
+        android:hint="Food Name"
+        android:inputType="textNoSuggestions"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_name"
+        android:text="Item Name:"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nf_calories"
+        android:text="Calories:"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nf_total_fat"
+        android:text="Total Fat:"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nf_cholesterol"
+        android:text="Total Cholesterol:"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nf_total_carbohydrate"
+        android:text="Total Carbohydrate:"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nf_serving_size_qty"
+        android:text="Serving Quantity:"
+        android:textSize="20dp"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" android:text="Add diet"
+        android:id="@+id/nfadddiet"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+
+</LinearLayout>
+
+
+</ScrollView>
+

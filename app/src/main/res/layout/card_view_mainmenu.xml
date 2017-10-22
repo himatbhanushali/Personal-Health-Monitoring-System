@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvmainmenu"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/newsimage"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvnewstitle"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_margin="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tvnewsdesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14dp"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

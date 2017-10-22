@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.krishnchinya.personalhealthmonitoringsystem.activity.DietActivity"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/CurrentDate"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:inputType="none"
+            android:focusable="false"
+            android:editable="false"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/Breakfast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="none"
+            android:background="@android:color/transparent"
+            android:inputType="none"
+            android:layout_weight=".5"
+            android:text="Breakfast"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:editable="false"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="-51dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <EditText
+            android:id="@+id/BfCal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_weight=".5"
+            android:ems="10"
+            android:textSize="18dp"
+            android:hint="Calories"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1.0">
+
+        <EditText
+            android:id="@+id/Lunch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="none"
+            android:background="@android:color/transparent"
+            android:layout_weight=".5"
+            android:text="Lunch"
+            android:inputType="none"
+            android:editable="false"
+            android:focusable="false"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/LunchCal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:ems="10"
+            android:layout_weight=".5"
+            android:hint="Calories"
+            android:inputType="number"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/Dinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            android:layout_weight=".5"
+            android:background="@android:color/transparent"
+            android:inputType="none"
+            android:focusable="false"
+            android:textSize="18dp"
+            android:editable="false"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/DinnerCal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_weight=".5"
+            android:ems="10"
+            android:textSize="18dp"
+            android:hint="Calories"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/Snacks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Snacks"
+            android:background="@android:color/transparent"
+            android:inputType="none"
+            android:focusable="false"
+            android:editable="false"
+            android:textSize="18dp"
+            android:layout_weight=".5"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/SnacksCal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_weight=".5"
+            android:ems="10"
+            android:textSize="18dp"
+            android:hint="Calories"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/Total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:focusable="false"
+            android:background="@android:color/transparent"
+            android:inputType="none"
+            android:editable="false"
+            android:textSize="18dp"
+            android:layout_weight=".5"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/TotalCal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_weight=".5"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="none"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:hint="Total Calories" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/dietSave"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+    </LinearLayout>
+</ScrollView>

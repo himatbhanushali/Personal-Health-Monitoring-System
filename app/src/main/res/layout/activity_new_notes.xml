@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.krishnchinya.personalhealthmonitoringsystem.activity.NewNotesActivity"
+    android:background="@android:color/background_light">
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:weightSum="2">
+
+        <EditText
+            android:gravity="left|top"
+            android:id="@+id/etDescription"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="Description"
+            android:lines="8"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1.6"/>
+
+    <ImageButton
+        android:id="@+id/camerabutton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:foreground="@drawable/camera"
+        android:src="@drawable/camera"
+        android:onClick="addListenerOnButton"
+        android:layout_marginEnd="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/etDescription"
+        android:layout_weight="0.4"/>
+
+    </LinearLayout>notesImage
+
+    <ImageView
+        android:id="@+id/notesImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/etDescription"
+        android:scaleType="fitXY"
+       />
+</LinearLayout>

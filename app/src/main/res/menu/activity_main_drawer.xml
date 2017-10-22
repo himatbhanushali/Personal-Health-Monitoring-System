@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/nav_vital_signs"
+            android:icon="@drawable/vital_signs"
+            android:title="@string/nav_vitalsigns" />
+        <item
+            android:id="@+id/nav_medication"
+            android:icon="@drawable/medication"
+            android:title="@string/nav_medication" />
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/notes"
+            android:title="@string/nav_notes" />
+        <item
+            android:id="@+id/nav_diet"
+            android:icon="@drawable/vital_signs"
+            android:title="@string/nav_diet" />
+        <item
+            android:id="@+id/nav_updateprofile"
+            android:icon="@drawable/setting"
+            android:title="@string/nav_updateprofile"/>
+
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:title="@string/nav_logout"
+                android:id="@+id/nav_logout"/>
+            <item
+                android:title="@string/nav_about_us"
+                android:id="@+id/nav_abtus"/>
+            <item
+                android:title="@string/nav_help"
+                android:id="@+id/nav_help"/>
+        </menu>
+    </item>
+
+</menu>

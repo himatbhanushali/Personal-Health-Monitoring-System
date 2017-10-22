@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="90dp"
+android:layout_margin="5dp"
+android:id="@+id/cvdiet">
+<LinearLayout
+    android:id="@+id/dietLinearVertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/dietLinearHorizontal1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvDiet1"
+            android:textSize="16dp"
+            android:layout_weight=".5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvDiet2"
+            android:textSize="16dp"
+            android:layout_weight=".5"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dietLinearHorizontal2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvDiet3"
+            android:textSize="16dp"
+            android:layout_weight=".5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvDiet4"
+            android:textSize="16dp"
+            android:layout_weight=".5"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    />
+
+</android.support.v7.widget.CardView>

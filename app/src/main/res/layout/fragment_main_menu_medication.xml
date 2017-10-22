@@ -1,0 +1,240 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.krishnchinya.personalhealthmonitoringsystem.fragments.MainMenu_Medication">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:weightSum="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/cvmorning">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/etmorning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="top"
+                        android:layout_weight="0.5"
+                        android:drawableLeft="@drawable/morning"
+                        android:drawablePadding="5dp"
+                        android:gravity="left"
+                        android:text="Morning"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:id="@+id/morning"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/etmorning"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+                    <!--<ImageView-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="32dp"-->
+                    <!--android:layout_height="32dp"-->
+                    <!--android:layout_below="@id/etmorning"-->
+                    <!--android:id="@+id/morningimag"/>-->
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/cvafternoon">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/etafternoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="top"
+                        android:layout_weight="0.5"
+                        android:drawableLeft="@drawable/afternoon"
+                        android:drawablePadding="5dp"
+                        android:gravity="left"
+                        android:text="Afternoon"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:id="@+id/afternoon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/etafternoon"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:weightSum="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/cvevening">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/etevening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="top"
+                        android:layout_weight="0.5"
+                        android:drawableLeft="@drawable/evening"
+                        android:drawablePadding="5dp"
+                        android:gravity="left"
+                        android:text="Evening"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:id="@+id/evening"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/etevening"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/cvnight">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/etnight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="top"
+                        android:layout_weight="0.5"
+                        android:drawableLeft="@drawable/night"
+                        android:drawablePadding="5dp"
+                        android:gravity="left"
+                        android:text="Night"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:id="@+id/night"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/etnight"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/add" />
+
+        <EditText
+            android:id="@+id/medicationdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:hint="Date"
+            android:paddingBottom="30dp" />
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+
+
+         <ImageView
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:background="@drawable/medication"
+             android:id="@+id/medication"
+             android:layout_centerInParent="true"
+             android:alpha="0.5"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Medication"
+             android:layout_below="@id/medication"
+             android:layout_centerInParent="true"
+             android:textSize="20dp"
+             />
+     </RelativeLayout>
+ -->
+</FrameLayout>

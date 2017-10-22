@@ -1,0 +1,2 @@
+An android application that recorded vital health signs like heart rate (using device camera for image processing to count RBC), blood sugar, blood pressure, hemoglobin, calorie intake, prescribed medicines.
+Used third-party APIs for discovering conflicts in medications and calculating calorie counts for food items entered/Selected by the users.

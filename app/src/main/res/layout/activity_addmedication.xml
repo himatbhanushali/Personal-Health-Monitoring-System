@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.krishnchinya.personalhealthmonitoringsystem.activity.Addmedication"
+    android:background="#FFFAFAFA"
+    >
+
+
+<LinearLayout
+    android:id="@+id/activity_addmedication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tilMedName">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/medicineName"
+                android:hint="Medicine Name"
+                android:inputType="textNoSuggestions"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Schedule Start Date"
+            android:id="@+id/scheduledate"
+            android:background="@android:color/transparent"
+            />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Doctor Name"
+                    android:id="@+id/doctorName"
+                    android:background="@android:color/transparent"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:entries="@array/medicineType"
+                android:id="@+id/medicineType">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+    
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration:"
+        android:enabled="false"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/duration">
+
+        <RadioButton
+            style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continous Days"
+            android:id="@+id/continousdays"/>
+
+        <RadioButton
+            style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="Number of Days"
+            android:id="@+id/noofdays"/>
+
+    </RadioGroup>
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/et_noofdays"-->
+            <!--android:layout_marginLeft="30dp"/>-->
+
+        <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="#3d433d" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days:"
+        android:enabled="false"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/days">
+
+        <RadioButton
+            style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Every Day"/>
+
+        <RadioButton
+            style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="Specfic days of week"
+            android:id="@+id/specificdays"
+            />
+
+    </RadioGroup>
+        
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!--<View-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="2dip"-->
+        <!--android:background="#3d433d" />-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remainder:"
+            android:enabled="false"
+            android:id="@+id/editText" />
+
+        <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:entries="@array/remainder_items">
+
+    </Spinner>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Select Time"
+        android:id="@+id/remaindertime"
+        android:background="@android:color/transparent"
+        />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" android:text="Save"
+        android:id="@+id/save_medication"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
+
+</ScrollView>

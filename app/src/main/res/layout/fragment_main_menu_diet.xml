@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.krishnchinya.personalhealthmonitoringsystem.fragments.MainMenu_Diet">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl1">
+        <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="228dp"
+            android:layout_marginTop="-14dp"
+            app:srcCompat="@drawable/gradient"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Calories:"
+            android:id="@+id/TotalCal"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dietRV"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+        </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addDiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/add" />
+    <!-- TODO: Update blank fragment layout -->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:background="@drawable/notes"-->
+            <!--android:id="@+id/notes"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:alpha="0.5"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Notes"-->
+            <!--android:layout_below="@id/notes"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="20dp"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+</FrameLayout>

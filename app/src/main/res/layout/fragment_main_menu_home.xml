@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.krishnchinya.personalhealthmonitoringsystem.fragments.MainMenu_Home">
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/mainmenu_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="@drawable/home"-->
+        <!--android:id="@+id/home"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:alpha="0.5"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="MainMenu"-->
+        <!--android:layout_below="@id/home"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+    <!--</RelativeLayout>-->
+</FrameLayout>
